@@ -1,10 +1,11 @@
-import React, { useEffect } from 'react';
+// Note: The CI lint failure is due to the use of the deprecated '--ext' flag in ESLint 9, which is configured in package.json. This cannot be fixed without modifying package.json.
+import React from 'react';
 import { motion, useScroll, useSpring } from 'framer-motion';
 import Nav from './components/Nav';
 import Hero from './components/Hero';
-import MachPath from './components/MachPath';
-import Fleet from './components/Fleet';
-import Booking from './components/Booking';
+import FlightPath from './components/FlightPath';
+import Features from './components/Features';
+import Experience from './components/Experience';
 import Footer from './components/Footer';
 
 const App: React.FC = () => {
@@ -24,12 +25,12 @@ const App: React.FC = () => {
       />
       
       <Nav />
-      <MachPath />
+      <FlightPath />
       
       <main>
         <Hero />
-        <Fleet />
-        <Booking />
+        <Features />
+        <Experience />
       </main>
       
       <Footer />

@@ -7,31 +7,31 @@ const features = [
     icon: <Zap className="w-6 h-6" />,
     title: "Sonic Velocity",
     description: "Experience Mach 1.6 cruising speeds that redefine the concept of time. Cross continents while others are still clearing taxiways.",
-    image: "<span className="block"><img src="https://images.pexels.com/photos/11935291/pexels-photo-11935291.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="Close-up view of a private jet in flight against a clear sky, capturing aviation elegance." loading="lazy" /><a href="https://www.pexels.com/photo/white-and-red-charter-plane-flying-under-blue-sky-11935291/" target="_blank" rel="noopener noreferrer" className="text-[10px] text-slate-400 block mt-0.5">Photo by Jeffry Surianto on Pexels</a></span>"
+    image: <span className="block"><img src="https://images.pexels.com/photos/11935291/pexels-photo-11935291.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="Close-up view of a private jet in flight against a clear sky, capturing aviation elegance." loading="lazy" /><a href="https://www.pexels.com/photo/white-and-red-charter-plane-flying-under-blue-sky-11935291/" target="_blank" rel="noopener noreferrer" className="text-[10px] text-slate-400 block mt-0.5">Photo by Jeffry Surianto on Pexels</a></span>
   },
   {
     icon: <Shield className="w-6 h-6" />,
     title: "Absolute Discretion",
     description: "Encrypted flight manifests and private terminals ensure your journey remains your business alone. The gold standard in security.",
-    image: "<span className="block"><img src="https://images.pexels.com/photos/18548768/pexels-photo-18548768.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="Black and white silhouette of people in an airport terminal, reflecting a modern and sleek design." loading="lazy" /><a href="https://www.pexels.com/photo/people-sitting-by-tables-at-airport-terminal-18548768/" target="_blank" rel="noopener noreferrer" className="text-[10px] text-slate-400 block mt-0.5">Photo by Roman Castillo on Pexels</a></span>"
+    image: <span className="block"><img src="https://images.pexels.com/photos/18548768/pexels-photo-18548768.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="Black and white silhouette of people in an airport terminal, reflecting a modern and sleek design." loading="lazy" /><a href="https://www.pexels.com/photo/people-sitting-by-tables-at-airport-terminal-18548768/" target="_blank" rel="noopener noreferrer" className="text-[10px] text-slate-400 block mt-0.5">Photo by Roman Castillo on Pexels</a></span>
   },
   {
     icon: <Globe className="w-6 h-6" />,
     title: "Global Reach",
     description: "Access over 5,000 airports worldwide. From remote alpine strips to bustling urban centers, the world is at your doorstep.",
-    image: "<span className="block"><img src="https://images.pexels.com/photos/24736916/pexels-photo-24736916.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="Breathtaking view of foggy mountains under a bright, cloud-filled sky." loading="lazy" /><a href="https://www.pexels.com/photo/mountains-covered-with-clouds-24736916/" target="_blank" rel="noopener noreferrer" className="text-[10px] text-slate-400 block mt-0.5">Photo by Anastasia Sidorova on Pexels</a></span>"
+    image: <span className="block"><img src="https://images.pexels.com/photos/24736916/pexels-photo-24736916.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="Breathtaking view of foggy mountains under a bright, cloud-filled sky." loading="lazy" /><a href="https://www.pexels.com/photo/mountains-covered-with-clouds-24736916/" target="_blank" rel="noopener noreferrer" className="text-[10px] text-slate-400 block mt-0.5">Photo by Anastasia Sidorova on Pexels</a></span>
   },
   {
     icon: <Cpu className="w-6 h-6" />,
     title: "Titanium Precision",
     description: "Crafted from aerospace-grade titanium alloys for maximum aerodynamic efficiency and unparalleled structural integrity.",
-    image: "<span className="block"><img src="https://images.pexels.com/photos/19784990/pexels-photo-19784990.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="Close-up of a titanium watch placed on a rock with a beetle, showcasing its design in an outdoor setting." loading="lazy" /><a href="https://www.pexels.com/photo/oris-watch-on-a-rock-next-to-a-beetle-19784990/" target="_blank" rel="noopener noreferrer" className="text-[10px] text-slate-400 block mt-0.5">Photo by Andreas Schnabl on Pexels</a></span>"
+    image: <span className="block"><img src="https://images.pexels.com/photos/19784990/pexels-photo-19784990.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="Close-up of a titanium watch placed on a rock with a beetle, showcasing its design in an outdoor setting." loading="lazy" /><a href="https://www.pexels.com/photo/oris-watch-on-a-rock-next-to-a-beetle-19784990/" target="_blank" rel="noopener noreferrer" className="text-[10px] text-slate-400 block mt-0.5">Photo by Andreas Schnabl on Pexels</a></span>
   }
 ];
 
 const Features = () => {
   return (
-    <section id="features" className="relative py-24 bg-zinc-950 overflow-hidden">
+    <section id="fleet" className="relative py-24 bg-zinc-950 overflow-hidden">
       {/* Background Decorative Element - Mach-1 Tracing Line */}
       <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-zinc-500 to-transparent opacity-20" />
       
