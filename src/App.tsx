@@ -1,27 +1,40 @@
-import { Toaster } from "@/components/ui/toaster";
-import { Toaster as Sonner } from "@/components/ui/sonner";
-import { TooltipProvider } from "@/components/ui/tooltip";
-import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Index from "./pages/Index";
-import NotFound from "./pages/NotFound";
+import React, { useEffect } from 'react';
+import { motion, useScroll, useSpring } from 'framer-motion';
+import Nav from './components/Nav';
+import Hero from './components/Hero';
+import MachPath from './components/MachPath';
+import Fleet from './components/Fleet';
+import Booking from './components/Booking';
+import Footer from './components/Footer';
 
-const queryClient = new QueryClient();
+const App: React.FC = () => {
+  const { scrollYProgress } = useScroll();
+  const scaleX = useSpring(scrollYProgress, {
+    stiffness: 100,
+    damping: 30,
+    restDelta: 0.001
+  });
 
-const App = () => (
-  <QueryClientProvider client={queryClient}>
-    <TooltipProvider>
-      <Toaster />
-      <Sonner />
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Index />} />
-          {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
-          <Route path="*" element={<NotFound />} />
-        </Routes>
-      </BrowserRouter>
-    </TooltipProvider>
-  </QueryClientProvider>
-);
+  return (
+    <div className="relative min-h-screen bg-slate-950">
+      {/* Progress Bar - Mach-1 Flightpath Indicator */}
+      <motion.div
+        className="fixed top-0 left-0 right-0 h-1 bg-amber-500 origin-left z-50"
+        style={{ scaleX }}
+      />
+      
+      <Nav />
+      <MachPath />
+      
+      <main>
+        <Hero />
+        <Fleet />
+        <Booking />
+      </main>
+      
+      <Footer />
+    </div>
+  );
+};
 
 export default App;
